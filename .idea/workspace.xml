@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85b0df5d-6f03-48e5-ba2a-5dee1f0e02cd" name="Changes" comment="" />
+    <list default="true" id="85b0df5d-6f03-48e5-ba2a-5dee1f0e02cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/topics/cslanguages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topics/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/topics/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topics/movies.html" beforeDir="false" afterPath="$PROJECT_DIR$/topics/movies.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,19 +25,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;BraydenM&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "topics/cslanguages",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="methods-spring-2025" />
@@ -67,6 +71,7 @@
       <updated>1738263489293</updated>
       <workItem from="1738263490992" duration="158000" />
       <workItem from="1738272798186" duration="19000" />
+      <workItem from="1738273368270" duration="121000" />
     </task>
     <servers />
   </component>
