@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+
   <component name="ChangeListManager">
     <list default="true" id="187c74c0-a421-4dca-bd77-7643f81216a0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/topics/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/topics/games.html" afterDir="false" />
+
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="85b0df5d-6f03-48e5-ba2a-5dee1f0e02cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/topics/cslanguages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topics/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/topics/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topics/movies.html" beforeDir="false" afterPath="$PROJECT_DIR$/topics/movies.html" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +28,11 @@
   "associatedIndex": 4
 }]]></component>
   <component name="ProjectId" id="2sNK7fZa9pC0NPEE37i5vw81Mfa" />
+
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2sMRWXz23CHagjwkkUVNCOJ8pGe" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,10 +42,31 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "topics/games",
     "kotlin-language-version-configured": "true",
+    "git-widget-placeholder": "topics/cslanguages",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
-}]]></component>
+}]]></component> 
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="methods-spring-2025" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="methods-spring-2025" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -47,6 +84,14 @@
       <option name="presentableId" value="Default" />
       <updated>1738290427374</updated>
       <workItem from="1738290428925" duration="34000" />
+      <changelist id="85b0df5d-6f03-48e5-ba2a-5dee1f0e02cd" name="Changes" comment="" />
+      <created>1738263489293</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738263489293</updated>
+      <workItem from="1738263490992" duration="158000" />
+      <workItem from="1738272798186" duration="19000" />
+      <workItem from="1738273368270" duration="121000" />
     </task>
     <servers />
   </component>
