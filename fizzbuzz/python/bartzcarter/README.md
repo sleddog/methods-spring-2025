@@ -13,7 +13,7 @@ The program prints numbers from 1 to a given number `n` (defaults to 15 if no ar
 ### Files in the Project
 
 - **`main.py`**: The Python program that contains the FizzBuzz implementation.
-- **`run_python.sh`**: The shell script that checks if an argument is passed. If an argument is provided, it runs the Python script with that argument; if not, it runs the Python script with the default value `15`.
+- **`run.sh`**: The shell script that checks if an argument is passed. If an argument is provided, it runs the Python script with that argument; if not, it runs the Python script with the default value `15`.
 
 ---
 
@@ -25,4 +25,12 @@ You can run the Python program directly by executing:
 
 ```bash
 python3 main.py [n]
+```
+
+from directory the file lives in or ...
+
+### 2. **Run the Python Program with the Shell Script from the repo top level directory**
+
+```bash
+./fizzbuzz/python/bartzcarter/run.sh [n]
 ```
