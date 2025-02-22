@@ -1,4 +1,4 @@
-# Fizzbuzz (Classic)
+# Fizzbuzz
 
 ### Description
 This project includes a Python implementation of the classic **FizzBuzz** challenge but with customized outputs. 
