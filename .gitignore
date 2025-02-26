@@ -1,2 +1,5 @@
 # IntelliJ IDEA files
 .idea
+
+# Rust build files
+target/
