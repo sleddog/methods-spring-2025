@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz Implementation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>FizzBuzz Implementation</h1>
+    <p>By: Nathan Dekeyrel</p>
+
+    <h2>What This Program Does</h2>
+    <p>This program implements the classic FizzBuzz problem with a twist. It prints numbers from 1 to n, but:</p>
+    <ul>
+        <li>For multiples of 3, it prints "Bob"</li>
+        <li>For multiples of 5, it prints "Cat"</li>
+        <li>For multiples of both 3 and 5, it prints "BobCat"</li>
+    </ul>
+
+    <h2>Implementation Approach</h2>
+    <p>Fizzbuzz itself is a fairly straightforward problem. It can be solved using a couple if-statements in a loop to check a set of rules. A common follow-up to this problem is seeing how a programmer would modify their code to handle changes to the rules. My implementation uses a dictionary/map to store the rules. This design choice provides:</p>
+    <ul>
+        <li><strong>Extensibility:</strong> New rules can be added by simply adding a new entry to the map</li>
+        <li><strong>Maintainability:</strong> Rules can be modified in one central location</li>
+        <li><strong>Separation of concerns:</strong> The rules are separated from the logic that applies them</li>
+    </ul>
+
+    <h2>How to Run</h2>
+    <p>The program can be run using the provided shell script:</p>
+    <p>For example:</p>
+    <pre><code>./run.sh 16</code></pre>
+    <p>The shell script executes the following command:</p>
+    <pre><code>python main.py 16</code></pre>
+
+    <h2>Example Output</h2>
+    <p>Running <code>./run.sh</code> produces:</p>
+    <pre><code>1
+2
+Bob
+4
+Cat
+Bob
+7
+8
+Bob
+Cat
+11
+Bob
+13
+14
+BobCat</code></pre>
+
+    <p><a href="../../../students/nathan-dekeyrel.html">Back</a></p>
+</body>
+</html>
