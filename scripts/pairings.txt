@@ -1,10 +1,11 @@
 Bartz, Carter is adding unit tests to Rasmussen, Aidan's solution
 Cripe, Jayce is adding unit tests to Lewis, Lucy's solution
 DeKeyrel, Nathan is adding unit tests to Bartz, Carter's solution
-Rollins, Samuel is adding unit tests to Cripe, Jayce's solution
+Fingerson, Cody is adding unit tests to Cripe, Jayce's solution
 Lewis, Lucy is adding unit tests to Miller, Brayden's solution
 McAbee, Robert is adding unit tests to Robertson, Jack's solution
 Miller, Brayden is adding unit tests to Ullman, Seth's solution
 Rasmussen, Aidan is adding unit tests to DeKeyrel, Nathan's solution
 Robertson, Jack is adding unit tests to McAbee, Robert's solution
+Rollins, Samuel is adding unit tests to Fingerson, Cody's solution
 Ullman, Seth is adding unit tests to Rollins, Samuel's solution
