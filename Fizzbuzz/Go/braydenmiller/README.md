@@ -60,14 +60,14 @@ Unit tests for the FizzBuzz program are located in the Fizzbuzz_test.go file. Th
 ### Unit Test Description
 Since the FizzBuzz program prints to the console, a helper function, `getFizzbuzzOutput`, is used to capture the output and compare it with the expected result.
 
-The go test file includes the following test cases:
+The Go test file includes the following test cases:
 - `TestJustNumber`: Verifies that the program correctly prints the number itself when it is neither a multiple of 3 nor 5.
 
 - `TestBob`: Verifies that the program prints "Bob" for numbers that are multiples of 3.
 
 - `TestCat`: Verifies that the program prints "Cat" for numbers that are multiples of 5.
 
-- `TestBobCat`: Verifies the program prints "BobCat" for numbers that are multiples of both 3 and 5.
+- `TestBobcat`: Verifies the program prints "BobCat" for numbers that are multiples of both 3 and 5.
 
 ### Prerequisites for Running Tests
 1. Make sure you have [Go installed](https://go.dev/doc/install)
