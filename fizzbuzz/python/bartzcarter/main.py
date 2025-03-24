@@ -15,14 +15,12 @@ def fizzbuzz(n):
         else:
             print(i)
 
-def main(args):
+if __name__ == "__main__":
     # Argument passed
-    if len(args) > 1:
-        print(f"Calling fizzbuzz with {args[1]}")
-        fizzbuzz(args[1])
+    if len(sys.argv) > 1:
+        print(f"Calling fizzbuzz with {sys.argv[1]}")
+        fizzbuzz(sys.argv[1])
     # No argument passed
     else:
         print("No arguments passed ... calling fizzbuzz() with 15")
         fizzbuzz(15)
-
-main(sys.argv)

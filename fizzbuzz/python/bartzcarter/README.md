@@ -34,3 +34,21 @@ from directory the file lives in or ...
 ```bash
 ./fizzbuzz/python/bartzcarter/run.sh [n]
 ```
+---
+## Testing
+
+### 1. **Run the Test Program Directly**
+
+You can run the Test program directly by executing:
+
+```bash
+python -m unittest test.py
+```
+
+from the directory the file lives in or ...
+
+### 2. **Run Using the Shell Script From The /python/bartzcarter Directory**
+
+```bash
+./run_tests.sh
+```
