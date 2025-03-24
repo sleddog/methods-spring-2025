@@ -36,7 +36,6 @@ Multiples of both 3 and 5, print `Bobcat`
    `Bob`
    `13`
    `14`
-<<<<<<< HEAD
    `BobCat`
 
 ## How to test
@@ -78,6 +77,4 @@ Test run finished after 125 ms
 [         2 tests successful      ]
 [         0 tests failed          ]
 ```
-=======
-   `BobCat`
->>>>>>> 5fffd71f5587c99a00d5e100f558b128f2ff09ad
+
