@@ -6,7 +6,7 @@ def fizzbuzz(n: int) -> None:
             5: "Cat"
             }
 
-    for i in range(1, n):
+    for i in range(1, n+1):
         output = ""
         for divisor, word in rules.items():
             if i % divisor == 0:
