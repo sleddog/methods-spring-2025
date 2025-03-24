@@ -1,5 +1,6 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 # If the --test flag is provided, run tests.
 if [ "$1" == "--test" ]; then
     # Ensure the JUnit 5 standalone jar is present in the current directory.
@@ -21,6 +22,8 @@ if [ "$1" == "--test" ]; then
     exit 0
 fi
 
+=======
+>>>>>>> 5fffd71f5587c99a00d5e100f558b128f2ff09ad
 # Check if an argument is not provided
 if [ -z "$1" ]; then
     echo "Usage: $0 <number>"
