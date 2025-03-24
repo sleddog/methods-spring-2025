@@ -55,3 +55,11 @@ Bob
 14
 BobCat
 ```
+
+## Unit Testing
+
+to run the unit tests in the `test_fizzbuzz.py` file simply run the `run_test.sh` file
+
+you may have to update the permissions of `run_test.sh` by running `chmod +x run_test.sh`
+
+The final line of the output will tell you if the tests have passed or failed
