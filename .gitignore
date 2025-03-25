@@ -1,4 +1,8 @@
 # IntelliJ IDEA files
 .idea
+
+# Rust build files
+target/
+
 .DS_Store
 __pycache__
