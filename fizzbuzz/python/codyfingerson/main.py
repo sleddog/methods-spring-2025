@@ -1,19 +1,24 @@
 import sys
 
 def bobcat_fizzbuzz(n):
-    if n % 3 == 0 and n % 5 == 0:
-        return "BobCat"
-    elif n % 5 == 0:
-        return "Cat"
-    elif n % 3 == 0 or n % 5 == 0:
-        return "Bob"
-    else:
-        return str(n)
+    results = []
+    for i in range(1, n+1):
+        if i % 3 == 0 and i % 5 == 0:
+            results.append("BobCat\n")
+        elif i % 5 == 0:
+            results.append("Cat\n")
+        elif i % 3 == 0:
+            results.append("Bob\n")
+        else:
+            results.append(str(i) + "\n")
+    return "".join(results)
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: python3 main.py <num1> <num2> ...")
+    if len(sys.argv) != 2:
+        print("Usage: python3 main.py <number>")
     else:
-        numbers = map(int, sys.argv[1:])
-        results = [bobcat_fizzbuzz(num) for num in numbers]
-        print(" ".join(results))
+        try:
+            num = int(sys.argv[1])
+            print(bobcat_fizzbuzz(num))
+        except ValueError:
+            print("Error: Please enter a valid integer.")
