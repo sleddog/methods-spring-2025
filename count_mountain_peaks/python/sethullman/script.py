@@ -17,11 +17,12 @@ def count_mountain_peaks(elevations):
 
 
 
-if len(sys.argv) > 1:
-    elevations = list(map(int, sys.argv[1:]))
-    print("elevations: ", str(elevations))
-    print("peaks: ", str(count_mountain_peaks(elevations)))
-else:
-    print("No elevations passed, using [4500, 7200, 6800, 8100, 7900, 9000, 8500]")
-    default_elevations = [4500, 7200, 6800, 8100, 7900, 9000, 8500]
-    print("peaks: " + str(count_mountain_peaks(default_elevations)))
+if __name__ == '__main__':
+    if len(sys.argv) > 1:
+        elevations = list(map(int, sys.argv[1:]))
+        print("elevations: ", str(elevations))
+        print("peaks: ", str(count_mountain_peaks(elevations)))
+    else:
+        print("No elevations passed, using [4500, 7200, 6800, 8100, 7900, 9000, 8500]")
+        default_elevations = [4500, 7200, 6800, 8100, 7900, 9000, 8500]
+        print("peaks: " + str(count_mountain_peaks(default_elevations)))

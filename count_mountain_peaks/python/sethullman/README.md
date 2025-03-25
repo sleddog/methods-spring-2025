@@ -31,3 +31,21 @@ python ./count_mountain_peaks/python/sethullman/script.py 4500 7200 6800 8100 79
 Command to run with shell script
 
 ./count_mountain_peaks/python/sethullman/run.sh 4500 7200 6800 8100 7900 9000 8500
+
+## Testing the count_mountain_peaks function
+
+Unit tests can be found in `count_mountain_peaks/python/sethullman/test_Count_Mountain_Peaks.py`.
+
+### **Running Unit Tests via Shell Script**
+
+To run the tests, use the provided `run_tests.sh` shell script. This will exectute all tests and provide an output of test outputs.
+
+**Make the shell script executable**:
+```bash
+chmod +x run_tests.sh
+```
+
+**Run the shell script**:
+```bash
+./run_tests.sh
+```
