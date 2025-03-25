@@ -5,9 +5,14 @@ This script counts the number of mountain peaks in a given list of elevations. A
 ### Usage
 
 1. Ensure you have Python installed.
-2. Run the script using:
+2. Run the script with the mountain peak numbers using:
    ```sh
-   python3 peak_counter.py
+   ./run.sh 1000 5000 1000
+   ```
+
+To test, run the test script:
+   ```sh
+   ./run_tests.sh
    ```
 
 ### Files
