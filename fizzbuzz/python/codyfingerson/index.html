@@ -38,23 +38,49 @@
         <li>Otherwise, it prints the number itself.</li>
     </ul>
     
-    <h2>Usage</h2>
+     <h2>Usage</h2>
     <h3>Python Script</h3>
     <p>Run the script directly from the command line:</p>
-    <pre><code>python3 main.py 3 5 15 7</code></pre>
-    <p>Output:</p>
-    <pre><code>Bob Cat BobCat 7</code></pre>
+    <pre><code>python3 main.py 15</code></pre>
+    <p>Example Output:</p>
+    <pre><code>
+1
+2
+Bob
+4
+Cat
+Bob
+7
+8
+Bob
+Cat
+11
+Bob
+13
+14
+BobCat</code></pre>
     
     <h3>Shell Script</h3>
     <p>Alternatively, you can run the shell script:</p>
-    <pre><code>./run_fizzbuzz.sh 3 5 15 7</code></pre>
+    <pre><code>./run_fizzbuzz.sh 15</code></pre>
     <p>Ensure the script is executable by running:</p>
     <pre><code>chmod +x run_fizzbuzz.sh</code></pre>
+
+    <h2>Unit Tests</h2>
+    <p>Unit tests are included to validate the program. To run them:</p>
+    <pre><code>python3 -m unittest discover -s . -p "test_main.py"</code></pre>
+    <p>Test coverage:</p>
+    <ul>
+        <li>Basic number printing.</li>
+        <li>Correct replacement of numbers for "Bob", "Cat", and "BobCat".</li>
+    </ul>
     
     <h2>Files</h2>
     <ul>
         <li><code>main.py</code> - The main Python script implementing BobCat FizzBuzz.</li>
         <li><code>run_fizzbuzz.sh</code> - A shell script to run the Python script.</li>
+        <li><code>test_main.py</code> - Contains unit tests for <code>main.py</code>.</li>
+        <li><code>run_tests.sh</code> - A shell script to run all unit tests.</li>
     </ul>
     
     <h2>License</h2>
