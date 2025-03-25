@@ -1,3 +1,6 @@
+import sys
+arguments = sys.argv[1:]
+    
 def count_mountain_peaks(elevations: list[int]) -> int:
     peak_count = 0
     
@@ -7,5 +10,5 @@ def count_mountain_peaks(elevations: list[int]) -> int:
 
     return peak_count
 
-print(count_mountain_peaks([4500, 7200, 6800, 8100, 7900, 9000, 8500])) 
-print(count_mountain_peaks([5000, 6000, 7000, 8000]))  
+result = count_mountain_peaks(arguments)
+print(result)
