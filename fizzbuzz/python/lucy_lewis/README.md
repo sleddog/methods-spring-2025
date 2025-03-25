@@ -25,3 +25,11 @@ The Python program then prints numbers from 1 to the given number *n*, applying 
 3. Run the shell script with
    ```./run.sh```
 4. Enter a number when prompted. 
+
+## Unit Testing (Jayce)
+- Have created a test.py file for unit tests on your fizzbuzz solution. Had to work around the call to main at the bottom of main.py so that's why there is some harder logic at the beginning of the testing file. 
+- Have created run_test.sh which can be accessed by running: 
+```chmod +x run_test.sh```
+and followed by 
+```./run_test.sh```
+- NOTE: I tried not to change any of Lucy's work, but changed her ```run.sh``` to run python instead of python3 since Windows has an issue with that. 
