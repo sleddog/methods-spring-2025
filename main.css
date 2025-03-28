@@ -1,0 +1,49 @@
+body {
+     background-color: aliceblue;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+     width: 50%;
+     margin: auto;
+}
+
+h1, h2, h3 {
+     font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+h1 {
+     margin-bottom: 70px;
+}
+
+a {
+     color: green;
+}
+
+a:hover {
+     color: rgb(81, 187, 81);
+}
+
+table {
+     background-color: black;
+}
+
+thead th {
+     color: aliceblue;
+     background-color: green;
+     padding: 20px;
+     pointer-events: none;
+}
+
+tr {
+     background-color: aliceblue;
+}
+
+tr:hover {
+     background-color: rgb(240, 254, 238);
+}
+
+td {
+     padding: 20px 20px 20px 10px ;
+     text-align: left;
+}
