@@ -1,0 +1,18 @@
+.click {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.click-container{
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    overflow: auto;
+}
