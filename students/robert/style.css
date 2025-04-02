@@ -1,3 +1,22 @@
+:root {
+    --bg: white;
+    --main-100: rgb(244, 253, 246);
+    --main-200: rgb(217, 255, 224);
+    --main-500: rgb(19, 129, 19);
+    --main-800: rgb(18, 79, 18);
+    --main-900: rgb(0, 40, 0);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--main-900);
+}
+
+h1, h2, h3 {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--main-800);
+}
+
 .click {
     height: 20px;
     width: 20px;
@@ -15,4 +34,19 @@
     width: 100vw;
     z-index: -1;
     overflow: auto;
+}
+
+a {
+
+    background-color: var(--main-500);
+    color: var(--main-100);
+    padding: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px #00000071;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background-color: var(--main-800);
+    box-shadow: 0 0 0 #00000000;
 }
