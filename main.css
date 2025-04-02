@@ -1,4 +1,5 @@
 :root {
+     --bg: white;
      --main-100: rgb(244, 253, 246);
      --main-200: rgb(217, 255, 224);
      --main-500: rgb(19, 129, 19);
@@ -7,7 +8,7 @@
 }
 
 body {
-     background-color: white;
+     background-color: var(--bg);
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -34,7 +35,7 @@ a:hover {
 }
 
 table {
-     background-color: white;
+     background-color: var(--bg);
 }
 
 thead th {
