@@ -32,7 +32,7 @@ from directory the file lives in or ...
 ### 2. **Run the Python Program with the Shell Script from the repo top level directory**
 
 ```bash
-./fizzbuzz/python/bartzcarter/run.sh [n]
+./problems/fizzbuzz/python/bartzcarter/run.sh [n]
 ```
 ---
 ## Testing
