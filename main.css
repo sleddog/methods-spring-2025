@@ -1,5 +1,14 @@
+:root {
+     --bg: white;
+     --main-100: rgb(244, 253, 246);
+     --main-200: rgb(217, 255, 224);
+     --main-500: rgb(19, 129, 19);
+     --main-800: rgb(18, 79, 18);
+     --main-900: rgb(0, 40, 0);
+}
+
 body {
-     background-color: aliceblue;
+     background-color: var(--bg);
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -17,30 +26,32 @@ h1 {
 }
 
 a {
-     color: green;
+     color: var(--main-500);
+     transition: all 0.2s ease;
 }
 
 a:hover {
-     color: rgb(81, 187, 81);
+     color: var(--main-800);
 }
 
 table {
-     background-color: black;
+     background-color: var(--bg);
 }
 
 thead th {
-     color: aliceblue;
-     background-color: green;
+     color: var(--main-100);
+     background-color: var(--main-500);
      padding: 20px;
      pointer-events: none;
 }
 
 tr {
-     background-color: aliceblue;
+     transition: all 0.2s ease;
+     background-color: var(--main-100);
 }
 
 tr:hover {
-     background-color: rgb(240, 254, 238);
+     background-color: var(--main-200);
 }
 
 td {
