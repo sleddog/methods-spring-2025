@@ -5,6 +5,13 @@
      --main-500: rgb(19, 129, 19);
      --main-800: rgb(18, 79, 18);
      --main-900: rgb(0, 40, 0);
+
+     --bg-dark: #181818;
+     --main-100-dark: #2d2d2d;
+     --main-200-dark: #404040;
+     --main-500-dark: #4caf50;
+     --main-800-dark: #0d5e0f;
+     --main-900-dark: #0c3e0a;
 }
 
 body {
@@ -34,6 +41,77 @@ a:hover {
      color: var(--main-800);
 }
 
+body.dark-mode {
+    background-color: var(--bg-dark);
+  }
+  
+body.dark-mode .container {
+    color: white;
+  }
+  
+body.dark-mode a {
+    color: var(--main-500-dark);
+  }
+  
+body.dark-mode a:hover {
+    color: var(--main-800-dark);
+  }
+  
+body.dark-mode table {
+    background-color: var(--bg-dark);
+  }
+  
+body.dark-mode thead th {
+    background-color: var(--main-500-dark);
+    color: black;
+  }
+
+body.dark-mode td{
+    color: black;
+  }
+  
+body.dark-mode tr:hover {
+    background-color: var(--main-200-dark);
+  }
+
+#dark-mode-toggle {
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: var(--main-500);
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+
+#dark-mode-toggle::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+  
+
+body.dark-mode #dark-mode-toggle {
+    background-color: var(--main-800); 
+  }
+  
+body.dark-mode #dark-mode-toggle::before {
+    transform: translateX(30px); 
+  }
+  
+  
+#dark-mode-toggle:hover {
+    opacity: 0.8;
+  }
+  
+
 table {
      background-color: var(--bg);
 }
@@ -57,4 +135,8 @@ tr:hover {
 td {
      padding: 20px 20px 20px 10px ;
      text-align: left;
+}
+
+button {
+    margin-top: 1rem;
 }
