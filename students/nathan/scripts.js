@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    const headings = document.querySelectorAll('h1');
+    const headings = document.querySelectorAll('h1, h2, p, li');
     headings.forEach(heading => {
         heading.classList.add('terminal-text');
     });
