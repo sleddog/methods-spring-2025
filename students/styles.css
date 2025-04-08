@@ -40,6 +40,10 @@ a:hover {
     color: white;
 }
 
+.names:hover {
+    color: #007acc;
+}
+
 .nav {
     display: inline-block;
     margin-top: 1rem;
