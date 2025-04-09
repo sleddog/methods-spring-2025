@@ -1,0 +1,130 @@
+:root {
+  cursor: none;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #8eff8e;
+  font-family: 'Courier New', monospace;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  cursor: none;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.terminal-container {
+  margin: 0 auto;
+  width: 65%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+a {
+  color: #7ecfff;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #7ecfff;
+  cursor: none;
+}
+
+h1 {
+  border-bottom: 1px solid #8eff8e;
+  padding-bottom: 10px;
+  text-shadow: 0 0 5px #8eff8e;
+  animation: flicker 3s infinite;
+}
+
+ul, ol {
+  list-style-type: square;
+  padding-left: 30px;
+  margin: 5px;
+}
+
+li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+li::before {
+  content: ">";
+  position: absolute;
+  left: -20px;
+  color: #8eff8e;
+}
+
+.back-link {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    transparent 0%, 
+    rgba(30, 30, 30, 0.1) 50%, 
+    transparent 100%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  3% { opacity: 0.8; }
+  6% { opacity: 1; }
+  7% { opacity: 0.9; }
+  9% { opacity: 1; }
+  70% { opacity: 1; }
+  72% { opacity: 0.9; }
+  74% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #8eff8e;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.cursor-dot {
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  background-color: #8eff8e;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+.terminal-text {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  animation: typing 2s steps(30, end);
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}

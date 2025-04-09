@@ -25,13 +25,13 @@ The program can be run using the provided shell script:
 For example:
 
 ```
-./run.sh 16
+./run.sh 15
 ```
 
 The shell script executes the following command:
 
 ```
-python main.py 16
+python main.py 15
 ```
 
 ## Example Output
