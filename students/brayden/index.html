@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brayden Miller - Student Page" />
+    <title>Brayden Miller</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Brayden Miller</h1>
+<p>Hello, I'm Brayden Miller, a Junior in Computer Science at Montana State University</p>
+<p>
+    Website: <a href="https://www.linkedin.com/in/brayden-miller-4555332a0">LinkedIn Profile</a><br />
+    Fizzbuzz Project: <a href="../../problems/fizzbuzz/go/index.html">Fizzbuzz</a><br />
+</p>
+<nav>
+    <ul>
+        <li><a href="../index.html">Back to Student Page</a></li>
+    </ul>
+</nav>
+
+
+<p>Current time: <span id="clock" class="clock"></span></p>
+
+<script>
+    function updateClock() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString();
+        document.getElementById('clock').textContent = timeString;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
+</body>
+</html>
