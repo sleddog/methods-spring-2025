@@ -1,85 +1,105 @@
-<h1 id="fizzbuzz-python-and-shell-script">FizzBuzz Python and Shell Script</h1>
-<p>
-  This project includes a Python program that implements a simple
-  <strong>FizzBuzz</strong> algorithm with customized output, along with a shell
-  script to run the Python program with optional arguments.
-</p>
+<h1 id="fizzbuzz-python-and-shell-script">FizzBuzz Python and Shell
+Script</h1>
+<p>This project includes a Python program that implements a simple
+<strong>FizzBuzz</strong> algorithm with customized output, along with a
+shell script to run the Python program with optional arguments.</p>
 <h3 id="fizzbuzz-logic">FizzBuzz Logic</h3>
-<p>
-  The program prints numbers from 1 to a given number <code>n</code> (defaults
-  to 15 if no argument is provided). However, for numbers divisible by:
-</p>
+<p>The program prints numbers from 1 to a given number <code>n</code>
+(defaults to 15 if no argument is provided). However, for numbers
+divisible by:</p>
 <ul>
-  <li>3, it prints <strong>“Bob”</strong>,</li>
-  <li>5, it prints <strong>“Cat”</strong>,</li>
-  <li>
-    and for numbers divisible by both 3 and 5, it prints
-    <strong>“BobCat”</strong>.
-  </li>
+<li>3, it prints <strong>“Bob”</strong>,</li>
+<li>5, it prints <strong>“Cat”</strong>,</li>
+<li>and for numbers divisible by both 3 and 5, it prints
+<strong>“BobCat”</strong>.</li>
 </ul>
 <h3 id="files-in-the-project">Files in the Project</h3>
 <ul>
-  <li>
-    <strong><code>main.py</code></strong
-    >: The Python program that contains the FizzBuzz implementation.
-  </li>
-  <li>
-    <strong><code>run.sh</code></strong
-    >: The shell script that checks if an argument is passed. If an argument is
-    provided, it runs the Python script with that argument; if not, it runs the
-    Python script with the default value <code>15</code>.
-  </li>
+<li><strong><code>main.py</code></strong>: The Python program that
+contains the FizzBuzz implementation.</li>
+<li><strong><code>run.sh</code></strong>: The shell script that checks
+if an argument is passed. If an argument is provided, it runs the Python
+script with that argument; if not, it runs the Python script with the
+default value <code>15</code>.</li>
 </ul>
 <hr />
 <h2 id="how-to-use">How to Use</h2>
-<h3 id="run-the-python-program-directly">
-  1. <strong>Run the Python Program Directly</strong>
-</h3>
+<h3 id="run-the-python-program-directly">1. <strong>Run the Python
+Program Directly</strong></h3>
 <p>You can run the Python program directly by executing:</p>
-<div class="sourceCode" id="cb1">
-  <pre
-    class="sourceCode bash"
-  ><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> main.py <span class="pp">[</span><span class="ss">n</span><span class="pp">]</span></span></code></pre>
-</div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> main.py <span class="pp">[</span><span class="ss">n</span><span class="pp">]</span></span></code></pre></div>
 <p>from directory the file lives in or …</p>
 <h3
-  id="run-the-python-program-with-the-shell-script-from-the-repo-top-level-directory"
->
-  2.
-  <strong
-    >Run the Python Program with the Shell Script from the repo top level
-    directory</strong
-  >
-</h3>
-<div class="sourceCode" id="cb2">
-  <pre
-    class="sourceCode bash"
-  ><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./problems/fizzbuzz/python/bartzcarter/run.sh</span> <span class="pp">[</span><span class="ss">n</span><span class="pp">]</span></span></code></pre>
-</div>
-
-<h2 id="how-to-use">Testing</h2>
-<h3 id="run-the-test-program-directly">
-  1. <strong>Run the Test Program Directly</strong>
-</h3>
+id="run-the-python-program-with-the-shell-script-from-the-repo-top-level-directory">2.
+<strong>Run the Python Program with the Shell Script from the repo top
+level directory</strong></h3>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./problems/fizzbuzz/python/bartzcarter/run.sh</span> <span class="pp">[</span><span class="ss">n</span><span class="pp">]</span></span></code></pre></div>
+<hr />
+<h2 id="testing">Testing</h2>
+<h3 id="run-the-test-program-directly">1. <strong>Run the Test Program
+Directly</strong></h3>
 <p>You can run the Test program directly by executing:</p>
-<div class="sourceCode" id="cb1">
-  <pre
-    class="sourceCode bash"
-  ><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> -m unittest test.py</span></code></pre>
-</div>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> unittest test.py</span></code></pre></div>
 <p>from the directory the file lives in or …</p>
 <h3
-  id="run-using-the-shell-script"
->
-  2.
-  <strong
-    >Run Using the Shell Script From The /python/bartzcarter Directory</strong
-  >
-</h3>
-<div class="sourceCode" id="cb2">
-  <pre
-    class="sourceCode bash"
-  ><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./run_tests.sh</span></span></code></pre>
-</div>
+id="run-using-the-shell-script-from-the-pythonbartzcarter-directory">2.
+<strong>Run Using the Shell Script From The /python/bartzcarter
+Directory</strong></h3>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./run_tests.sh</span></span></code></pre></div>
+<h1 id="fizzbuzz-api-endpoint-in-flask">FizzBuzz API endpoint in
+Flask</h1>
+<h3
+id="app.py-takes-the-solutionfunction-and-expose-it-as-an-api-endpoint-on-a-local-web-server-flask.">app.py
+takes the solution/function and expose it as an API endpoint on a local
+web server (flask).</h3>
+<h4 id="how-to-call-the-api-and-some-example-request-response-pairs">How
+to call the API and some example request / response pairs:</h4>
+<p>Run app.py to bring up the server</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> ./problems/fizzbuzz/python/bartzcarter/app.py</span></code></pre></div>
+<p>Navigate to: http://127.0.0.1:5000 where the app is being served</p>
+<p>In the change the url to
+http://127.0.0.1:5000/api/fizzbuzz?number=&lt;&gt; … specify the input
+number by replacing &lt;&gt;</p>
+<p>This hits the endpoint and returns a JSON response</p>
+<p><img src="static/images/fizzbuzz-api-response1.png" alt="API/Fizzbuzz Response" style="max-width: 100%; width: 400px;">
+<br>
+<img src="static/images/fizzbuzz-api-request-header1.png" alt="API/Fizzbuzz Request Header" style="max-width: 100%; width: 400px;"></p>
+<h2
+id="another-way-to-hit-the-api-is-through-api_call.py-which-uses-python-requests">Another
+way to hit the API is through api_call.py which uses Python
+requests</h2>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> ./problems/fizzbuzz/python/bartzcarter/api_call.py</span></code></pre></div>
+<p>Running this file will also hit the end point and return a JSON
+response:</p>
+<p><img src="static/images/python-requests-response1.png" alt="API/Fizzbuzz Response" style="max-width: 100%; width: 400px;">
+<br></p>
+<p>In this example the response is being printed to std out</p>
+<p>Here is the api call :</p>
+<pre><code>import requests
 
-<a href="../../../../students/carter/index.html">Back to Carter's Page</a>
+response = requests.get(&quot;http://127.0.0.1:5000/api/fizzbuzz&quot;, params={&quot;number&quot;: 15})
+
+if response.status_code == 200:
+    data = response.json()
+    print(&quot;Input:&quot;, data[&quot;input&quot;])
+    print(&quot;Result:&quot;, data[&quot;result&quot;])
+else:
+    print(&quot;Error:&quot;, response.status_code)</code></pre>
+<h2
+id="the-server-is-also-set-up-to-display-the-fizzbuzz-functionality-in-a-web-page">The
+server is also set up to display the fizzbuzz functionality in a web
+page</h2>
+<p>This is done by utilizing jinja 2 templating</p>
+<p>Once the server is running, navigate to
+<code>http://127.0.0.1:5000</code></p>
+<p><img src="static/images/fizzbuzz-WebPage1.png" alt="API/Fizzbuzz Web page" style="max-width: 100%; width: 400px;">
+<br></p>
+<p>Submit the form and the fizzbuzz solution is displayed.</p>
+<p><img src="static/images/fizzbuzz-run1.png" alt="API/Fizzbuzz run" style="max-width: 100%; width: 400px;">
+<br></p>
