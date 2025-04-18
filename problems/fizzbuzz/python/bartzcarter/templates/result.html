@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FizzBuzz Result</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <h1>FizzBuzz up to {{ number }}</h1>
+    <ul>
+        {% for item in result %}
+            <li style="list-style-type: none">{{ item }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Run again</a>
+</body>
+</html>
