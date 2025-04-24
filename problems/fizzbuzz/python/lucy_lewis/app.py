@@ -21,7 +21,7 @@ def fizzbuzz_output():
     except (ValueError, TypeError):
         return "Invalid input", 400
     output = fizzbuzz(number)
-    return render_template("fizzbuzz_result.html", output=output)
+    return render_template("fizzbuzz_result.html", input=number, output=output)
 
 
 
