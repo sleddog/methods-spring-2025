@@ -63,3 +63,38 @@ to run the unit tests in the `test_fizzbuzz.py` file simply run the `run_test.sh
 you may have to update the permissions of `run_test.sh` by running `chmod +x run_test.sh`
 
 The final line of the output will tell you if the tests have passed or failed
+
+## API
+
+This solution is also available via an API. You can spin up a local server using `python app.py`, and in another terminal window, run `curl http://localhost:5000/fizzbuzz` to get back:
+```
+  "result": [
+    "1",
+    "2",
+    "Bob",
+    "4",
+    "Cat",
+    "Bob",
+    "7",
+    "8",
+    "Bob",
+    "Cat",
+    "11",
+    "Bob",
+    "13",
+    "14",
+    "BobCat"
+  ]
+
+```
+
+You can also pass an optional argument like `curl http://localhost:5000/fizzbuzz?number=5` to get back:
+```
+  "result": [
+    "1",
+    "2",
+    "Bob",
+    "4",
+    "Cat"
+  ]
+```
