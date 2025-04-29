@@ -9,6 +9,19 @@ Multiples of both 3 and 5, print `Bobcat`
 
 ## How to run:
 
+# Backend API Server (Assignment 6)
+
+## How to Run the API Server
+
+1. Stay in the `problems/fizzbuzz/java/jayce_cripe` directory.
+2. Compile the Java files:
+   ```bash
+   javac FizzBuzz.java FizzBuzzServer.java
+
+
+
+## First implementation: 
+
 1. Clone the repo if you haven't already
 2. Go to `fizzbuzz/java/jayce-cripe` directory
 3. Make `run.sh` script executable:
