@@ -1,30 +1,44 @@
-use std::env;
+use actix_web::{web, App, HttpResponse, HttpServer, Responder};
+use serde::Deserialize;
 
-fn main() {
-    // get arguments
-    let args: Vec<String> = env::args().collect();
-    if args.len() < 2 {
-        eprintln!("No argument found, please provide an integer.");
-        std::process::exit(1);
+#[derive(Deserialize)]
+struct QueryParams {
+    bound: i32,
+}
+
+fn bobcat(number: &i32) -> String {
+    if number % 3 == 0 && number % 5 == 0 {
+        "BobCat".to_string()
+    } else if number % 3 == 0 {
+        "Bob".to_string()
+    } else if number % 5 == 0 {
+        "Cat".to_string()
+    } else {
+        number.to_string()
+    }
+}
+
+async fn query_handler(query: web::Query<QueryParams>) -> impl Responder {
+    let bound = query.bound;
+    let mut result = String::new();
+
+    for current in 1..=bound {
+        result.push_str(&bobcat(&current));
+        result.push('\n');
     }
 
-    // assign the argument given to a integer ("bound")
-    let bound: i32 = args[1].parse().expect("Failed to parse arguement as integer");
-    
-    // increment from 1 to the bound
-    for current in 1..(bound + 1) {
-        // check if current number is a multiple of 3 and 5
-        if current % 3 == 0 && current % 5 == 0{
-            println!("BobCat");
-        // check if current number is a multiple of 3
-        } else if current % 3 == 0 {
-            println!("Bob");
-        // check if current number is a multiple of 5
-        } else if current % 5 == 0 {
-            println!("Cat");
-        // otherwise, print the current number
-        } else {
-            println!("{}", current);
-        }
-    }
+    HttpResponse::Ok().content_type("text/plain").body(result)
+}
+
+#[actix_web::main]
+async fn main() -> std::io::Result<()> {
+    println!("Starting server at 127.0.0.1/8080");
+    println!("Try visting the url: http://localhost:8080/?bound=15");
+    println!("Or run the command: curl 'http://localhost:8080/?bound=15'");
+    HttpServer::new(|| {
+        App::new().route("/", web::get().to(query_handler))
+    })
+    .bind(("127.0.0.1", 8080))?
+    .run()
+    .await
 }

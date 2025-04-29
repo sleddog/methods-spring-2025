@@ -4,7 +4,7 @@
 
 An implementation of the classic FizzBuzz challenge, written in Rust.
 
-Given the input `15`, the program should print:
+Given the bound `15`, the program should print:
 
 `1`
 `2`
@@ -25,7 +25,11 @@ Given the input `15`, the program should print:
 ## To run: 
 
 ```bash 
-$ ./run.sh 15
+$ ./run.sh
 ```
+
+This will start a local server at 127.0.0.1/8080
+
+Once running locally, you can vist the endpoint at `http://localhost:8080/?bound=15`.
 
 Be aware that you will need `cargo` installed to compile the executable. Refer to the Rust documentation for installation instructions.
