@@ -71,6 +71,40 @@ Bob
 14
 BobCat</code></pre>
 
+    <h1>API</h1>
+    <p>This solution is also available via an API. You can spin up a local server using <pre><code>python app.py</code></pre> Then, in another terminal window, run <pre><code>curl http://localhost:5000/fizzbuzz</code></pre> to get back:</p>
+    <pre><code>
+  "result": [
+    "1",
+    "2",
+    "Bob",
+    "4",
+    "Cat",
+    "Bob",
+    "7",
+    "8",
+    "Bob",
+    "Cat",
+    "11",
+    "Bob",
+    "13",
+    "14",
+    "BobCat"
+  ]
+    </code></pre>
+
+    <p>You can also pass an optional argument like <code>curl http://localhost:5000/fizzbuzz?number=5</code> to get back:</p>
+
+    <pre><code>
+  "result": [
+    "1",
+    "2",
+    "Bob",
+    "4",
+    "Cat"
+  ]
+    </code></pre>
+
     <p><a href="../../../../students/nathan/index.html">Back</a></p>
 </body>
 </html>
