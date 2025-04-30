@@ -1,10 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"os"
-	"strconv"
-)
+import "strconv"
 
 func generateWords(n int) []string {
 	var result []string
@@ -21,21 +17,4 @@ func generateWords(n int) []string {
 		}
 	}
 	return result
-}
-
-func main() {
-	if len(os.Args) != 2 {
-		fmt.Println("Usage: ./fizzbuzz <number>")
-		return
-	}
-	n, err := strconv.Atoi(os.Args[1])
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-
-	words := generateWords(n)
-	for _, word := range words {
-		fmt.Println(word)
-	}
 }
