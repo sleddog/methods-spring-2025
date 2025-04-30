@@ -44,6 +44,16 @@ Bob
 BobCat
 ```
 
+## Running the Server
+
+```sh
+   go run server.go generate.go
+```
+
+Example server use: `curl "http://localhost:8080/generate?n=15"`<br />
+Expected output: `["1","2","Bob","4","Cat","Bob","7","8","Bob","Cat","11","Bob","13","14","BobCat"]`
+
+
 ## Installation & Setup
 
 1. Ensure you have [Go installed](https://go.dev/doc/install)

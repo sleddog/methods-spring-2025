@@ -3,4 +3,4 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
-go run Fizzbuzz.go "$1"
+go run cli.go generate.go "$1"
