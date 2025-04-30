@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bobcatbuzz-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bobcatbuzz
+  template:
+    metadata:
+      labels:
+        app: bobcatbuzz
+    spec:
+      containers:
+      - name: bobcatbuzz
+        image: bobcatbuzz-api
+        ports:
+        - containerPort: 5001
