@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>FizzBuzz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>FizzBuzz</h1>
+    <div id="form-div">
+        <form hx-post="/fizzbuzz" hx-target="closest div" hx-swap="afterend">
+            <input name=fizzbuzz_input type="number" required placeholder="Enter a number">
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
